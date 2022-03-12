@@ -1,20 +1,55 @@
-main {
-    width: 45%;
-    margin-left: auto; 
-    margin-right: auto;
-}
-
-#buttonContainer {
+.firstContainer{
     display: flex;
-    justify-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
-h2 {
-    display: block;
+.secondContainer{
+        display: flex;
+        flex-direction: column;
 }
 
-.card-img-top {
-    width: 50%;
-    height: 10%;
-    object-fit: cover; 
+.firstImageContainer{
+    display: flex;
+    justify-content: center;
 }
+
+.firstImage {
+    height: 50vh;
+    width: auto;
+}
+
+.mainText{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.inputText{
+    font-size: 0.8rem;
+}
+
+.form-control{
+    height: 5vh;
+}
+
+.btn{
+    font-size: 0.8rem;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 1rem;
+}
+
+.card {
+    border: 0;
+
+
+}
+
+.card img {
+    object-fit: scale-down;
+    height: 30%;
+    width: auto;
+}
+
+
+
