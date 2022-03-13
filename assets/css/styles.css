@@ -42,8 +42,8 @@
 }
 
 .card {
-    border: 0;
-    height: 49rem;
+    border: 5px solid green;
+    height: 48rem;
 
 
 }
@@ -53,6 +53,7 @@
     height: 30%;
     width: auto;
 }
+
 
 
 
