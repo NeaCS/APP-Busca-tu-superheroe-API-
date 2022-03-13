@@ -1,3 +1,5 @@
+
+
 .firstContainer{
     display: flex;
     justify-content: center;
@@ -41,6 +43,7 @@
 
 .card {
     border: 0;
+    height: 49rem;
 
 
 }
