@@ -1,22 +1,22 @@
 $(() => {
   let buscar = $("#botonbuscar");
 
-  let dataPoints = [];
+ let dataPoints = [];
 
-  var options = {
-    title: {
-      text: "Poderes del superheroe"
-    },
-    data: [{
-      type: "pie",
-      startAngle: 45,
-      showInLegend: "true",
-      legendText: "{label}",
-      indexLabel: "{label} ({y})",
-      yValueFormatString: "#,##0.#" % "",
-      dataPoints: dataPoints
-    }]
-  };
+ var options = {
+	title: {
+		text: "Poderes del superheroe"
+	},
+	data: [{
+			type: "pie",
+			startAngle: 45,
+			showInLegend: "true",
+			legendText: "{label}",
+			indexLabel: "{label} ({y})",
+			yValueFormatString:"#,##0.#"%"",
+			dataPoints: dataPoints
+	}]
+};
 
   buscar.on("click", () => {
 
@@ -28,16 +28,16 @@ $(() => {
       dataType: "JSON",
       success: (dataApi) => {
         console.log("salida de dataApi", dataApi);
-        for (prop in dataApi.powerstats) {
+        for(prop in dataApi.powerstats) {
           dataPoints.push({
-            label: prop,
-            y: dataApi.powerstats[prop]
+          label: prop,
+          y: dataApi.powerstats[prop]
           })
-
-        }
-        $("#chartContainer").CanvasJSChart(options);
-        dataPoints = []
-
+         
+          }
+           $("#chartContainer").CanvasJSChart(options);
+           dataPoints = []
+          
 
 
         let tarjeta = $(".card");
