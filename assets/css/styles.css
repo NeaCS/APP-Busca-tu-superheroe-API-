@@ -1,4 +1,12 @@
+body {
+    background-image: url("https://img.wallpapersafari.com/desktop/1680/1050/74/63/pXzB1f.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed; 
+  }
 
+  .navbar {
+    background-color: black;
+  }
 
 .firstContainer{
     display: flex;
@@ -24,10 +32,14 @@
 .mainText{
     font-size: 1.5rem;
     margin-top: 1.5rem;
+    background-color: rgb(206, 203, 203);
+    border-radius: 3%;
 }
 
 .inputText{
     font-size: 0.8rem;
+    background-color: rgb(206, 203, 203);
+    border-radius: 3%;
 }
 
 .form-control{
@@ -42,8 +54,10 @@
 }
 
 .card {
-    border: 5px solid green;
-    height: 48rem;
+    border: 5px solid blue;
+    height: 54rem;
+    border-radius: 1.5%;
+    
 
 
 }
@@ -52,6 +66,13 @@
     object-fit: scale-down;
     height: 30%;
     width: auto;
+    background: rgb(99,99,105);
+background: linear-gradient(90deg, rgba(99,99,105,1) 0%, rgba(6,6,6,1) 35%, rgba(102,103,103,1) 100%);
+}
+
+li {
+    background-color: rgb(206, 203, 203);
+
 }
 
 
